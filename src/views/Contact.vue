@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import ContactForm from "@/components/Contact/ContactForm.vue";
+import ContactForm from "@/components/Forms/ContactForm.vue";
 
 export default Vue.extend({
   name: "Contact",
