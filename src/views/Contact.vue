@@ -1,10 +1,5 @@
 <template>
   <div id="wrapper" class="has-text-centered-mobile">
-    <!-- Header -->
-    <section id="hero" class="hero is-medium">
-      <gcv_header></gcv_header>
-    </section>
-
     <!-- Contact -->
     <div class="container has-text-centered">
       <form class="form-horizontal">
@@ -79,22 +74,12 @@
     </div>
 
     <br /><br />
-
-    <!-- Footer -->
-    <gcv_footer></gcv_footer>
   </div>
 </template>
 
 <script>
-import gcv_header from "@/components/Header";
-import gcv_footer from "@/components/Footer";
-
 export default {
-  name: "Contact",
-  components: {
-    gcv_header,
-    gcv_footer
-  }
+  name: "Contact"
 };
 </script>
 
