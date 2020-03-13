@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import PageHeader from "@/components/Header/Header.vue";
+import PageHeader from "@/components/Header.vue";
 import PageFooter from "@/components/Footer.vue";
 export default {
   name: "App",

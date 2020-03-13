@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <router-link to="/">
-      <h2>
+  <div class="navbar-brand">
+    <router-link to="/" class="navbar-item">
+      <h2 class="logo is-size-4">
         <span class="green">global</span>
         <span class="yellow">cv</span>
       </h2>
@@ -18,12 +18,16 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 div {
-  margin-right: auto;
+  display: flex;
+  flex-shrink: 0;
+  align-items: stretch;
+  min-height: 3.25rem;
 }
 
-h2 > span {
-  font-size: 1.8em;
+a {
+  text-decoration: none;
 }
+
 .green {
   color: green;
 }

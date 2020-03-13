@@ -1,12 +1,12 @@
 <template>
-  <div class="hero-head">
+  <header class="hero-head">
     <page-navbar></page-navbar>
-  </div>
+  </header>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import PageNavbar from "./Navbar.vue";
+import PageNavbar from "./Navbar/Navbar.vue";
 
 export default Vue.extend({
   name: "Header",
@@ -14,4 +14,8 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+header {
+  min-height: 80px;
+}
+</style>
