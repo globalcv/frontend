@@ -42,12 +42,19 @@ menu > a {
   }
 
   menu {
-    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    z-index: 3;
+    background-color: white;
+    width: 100%;
+    text-align: center;
   }
 
   menu > a {
     width: 100%;
     display: block;
+    margin-top: 1px;
+    outline: solid 0.5px darken(white, 15%);
   }
 }
 </style>

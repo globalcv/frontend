@@ -22,6 +22,7 @@ export default Vue.extend({
 button {
   display: none;
 }
+
 @media only screen and (max-width: 678px) {
   button {
     display: block;
@@ -34,7 +35,7 @@ button {
     border-radius: 10%;
     font-size: 1.8em;
     margin: {
-      right: calc(7px + 0.3em);
+      right: calc(15px + 0.3em);
     }
   }
 }

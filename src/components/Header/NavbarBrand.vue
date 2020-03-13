@@ -18,10 +18,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 div {
-  margin: {
-    left: calc(12px + 0.6em);
-    right: auto;
-  }
+  margin-right: auto;
 }
 
 h2 > span {
