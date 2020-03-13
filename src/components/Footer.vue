@@ -25,5 +25,3 @@ export default Vue.extend({
   components: { GithubButton, TwitterButton }
 });
 </script>
-
-<style scoped></style>

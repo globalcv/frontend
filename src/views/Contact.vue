@@ -4,23 +4,13 @@
     <div class="container has-text-centered">
       <form class="form-horizontal">
         <fieldset>
-          <br /><br />
-
-          <h3 class="has-text-green is-size-1 is-size-3-mobile">
-            Contact us
-          </h3>
+          <h3 class="has-text-green is-size-1 is-size-3-mobile">Contact us</h3>
 
           <!-- First Name -->
           <div class="field">
             <label class="label" for="first_name">First Name:</label>
             <div class="control">
-              <input
-                id="first_name"
-                type="text"
-                placeholder="Solomon"
-                class="input"
-                required
-              />
+              <input id="first_name" type="text" placeholder="Solomon" class="input" required />
             </div>
           </div>
 
@@ -28,13 +18,7 @@
           <div class="field">
             <label class="label" for="last_name">Last Name:</label>
             <div class="control">
-              <input
-                id="last_name"
-                type="text"
-                placeholder="Vandy"
-                class="input"
-                required
-              />
+              <input id="last_name" type="text" placeholder="Vandy" class="input" required />
             </div>
           </div>
 
@@ -62,18 +46,16 @@
 
           <!-- Submit -->
           <div class="field">
-            <label class="label" for="submit"></label>
-            <div class="control">
-              <button id="submit" class="btn has-mustard-bg is-size-7 a-menu">
-                Submit
-              </button>
+            <div class="control submit-button-box">
+              <button id="submit" class="btn has-mustard-bg is-size-10 a-menu">Submit</button>
             </div>
           </div>
         </fieldset>
       </form>
     </div>
 
-    <br /><br />
+    <br />
+    <br />
   </div>
 </template>
 
@@ -83,4 +65,24 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+form {
+  max-width: 786px;
+  padding: calc(20px + 2em);
+  margin: auto;
+  background-color: darken(white, 2%);
+  border-radius: 2.5%;
+  @include box-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.2));
+}
+
+.submit-button-box {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+}
+
+.submit-button-box > button {
+  height: 50px;
+}
+</style>
