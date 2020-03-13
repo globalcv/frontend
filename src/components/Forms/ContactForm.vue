@@ -52,7 +52,7 @@ form {
   max-width: 786px;
   padding: calc(20px + 2em);
   margin: auto;
-  background-color: darken(white, 2%);
+  background-color: darken($backgroundColor, 2%);
   border-radius: 2.5%;
   @include box-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.2));
 }

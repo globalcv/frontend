@@ -1,19 +1,13 @@
 <template>
   <div class="navbar-end">
     <a class="a-menu is-size-7 navbar-item">
-      <router-link to="/">
-        home
-      </router-link>
+      <router-link to="/">home</router-link>
     </a>
     <a class="a-menu is-size-7 navbar-item">
-      <router-link to="/contact">
-        contact
-      </router-link>
+      <router-link to="/contact">contact</router-link>
     </a>
     <a class="a-menu is-size-7 navbar-item">
-      <router-link to="/login">
-        log in
-      </router-link>
+      <router-link to="/login">log in</router-link>
     </a>
   </div>
 </template>
@@ -32,7 +26,7 @@ export default Vue.extend({
   }
 
   .navbar-end {
-    background-color: white;
+    background-color: $navbarColor;
     text-align: center;
   }
 
