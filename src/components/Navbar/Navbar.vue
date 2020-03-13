@@ -35,6 +35,11 @@ export default Vue.extend({
     changeDrawerState() {
       this.drawer = !this.drawer;
     }
+  },
+  watch: {
+    $route() {
+      this.drawer = false;
+    }
   }
 });
 </script>
