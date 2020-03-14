@@ -1,51 +1,21 @@
 <template>
-    <div class="hero-head">
-        <nav class="navbar">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a class="navbar-item">
-                        <router-link to="/">
-                            <h3 class="logo has-text-green is-size-4">globalcv</h3>
-                        </router-link>
-                    </a>
-                </div>
-
-                <div class="navbar-menu">
-
-                    <div class="navbar-end">
-                        <a class="a-menu is-size-7 navbar-item">
-                            <router-link to="/">
-                                home
-                            </router-link>
-                        </a>
-                        <a class="a-menu is-size-7 navbar-item">
-                            <router-link to="/contact">
-                                contact
-                            </router-link>
-                        </a>
-                        <a class="a-menu is-size-7 navbar-item">
-                            <router-link to="/login">
-                                log in
-                            </router-link>
-                        </a>
-                    </div>
-                </div>
-                <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
-            </div>
-        </nav>
-    </div>
+  <header class="hero-head">
+    <page-navbar></page-navbar>
+  </header>
 </template>
 
-<script>
-    export default {
-        name: "Header"
-    }
+<script lang="ts">
+import Vue from "vue";
+import PageNavbar from "./Navbar/Navbar.vue";
+
+export default Vue.extend({
+  name: "Header",
+  components: { PageNavbar }
+});
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+header {
+  min-height: 80px;
+}
 </style>
