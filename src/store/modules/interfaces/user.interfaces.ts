@@ -25,3 +25,5 @@ export interface RegisterCredentials {
 }
 
 export type UserId = string | number;
+
+export type FetchUserDataResponse = Promise<AuthResponse> | Promise<false>;
