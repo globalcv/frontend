@@ -25,7 +25,6 @@ securedAxiosInstance.interceptors.response.use(
     if (401 === error.response.status) {
       // todo: clear user state
       localStorage.setItem("token", "");
-      localStorage.setItem("username", "");
     } else {
       return Promise.reject(error);
     }

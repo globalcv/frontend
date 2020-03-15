@@ -9,8 +9,6 @@ Vue.use(Buefy);
 
 Vue.config.productionTip = false;
 
-const API_URL = "http://localhost:8000";
-
 new Vue({
   router,
   store,
