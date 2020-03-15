@@ -3,11 +3,15 @@ import {
   LoginCredentials,
   RegisterCredentials
 } from "./interfaces/user.interfaces";
-import { getDefaultState, handleAuth } from "./helpers/user.helper";
+import {
+  getDefaultState,
+  handleAuth,
+  getUserState
+} from "./helpers/user.helper";
 import { Commit } from "vuex";
 import { plainAxiosInstance } from "@/services/api.service";
 
-const state: UserState = getDefaultState();
+const state: UserState = getUserState();
 
 const mutations = {
   updateUser(state: UserState, user: UserState) {

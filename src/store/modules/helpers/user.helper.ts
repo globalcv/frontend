@@ -18,7 +18,6 @@ export const getDefaultState = (): UserState => {
 export const getUserState = (): UserState => {
   const token = localStorage.getItem("token");
   let state: UserState = getDefaultState();
-
   if (token && token !== null) {
     securedAxiosInstance
       .get("users/me")
