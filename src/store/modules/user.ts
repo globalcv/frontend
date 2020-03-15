@@ -2,14 +2,17 @@ import {
   UserState,
   LoginCredentials,
   RegisterCredentials
-} from "./interfaces/user.interfaces";
+} from "../interfaces/user.interfaces";
 import {
   getDefaultState,
   handleAuth,
   getUserState
-} from "./helpers/user.helper";
+} from "../helpers/user.helper";
 import { Commit } from "vuex";
-import { plainAxiosInstance } from "@/services/api.service";
+import {
+  plainAxiosInstance,
+  securedAxiosInstance
+} from "@/services/api.service";
 
 const state: UserState = getUserState();
 
@@ -58,6 +61,12 @@ const actions = {
         })
         .catch(e => reject(e));
     });
+  },
+
+  logout({ commit }: { commit: Commit }) {
+    securedAxiosInstance.post("/logout");
+    localStorage.removeItem("token");
+    commit("resetUser");
   }
 };
 
