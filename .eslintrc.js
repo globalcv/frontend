@@ -14,7 +14,6 @@ module.exports = {
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
-    "no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
-    "@typescript-eslint/no-unused-vars": "off" // same functionality as no-unused-vars
+    "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }]
   }
 };
