@@ -60,7 +60,7 @@ const actions = {
   },
 
   logout({ commit }: { commit: Commit }) {
-    securedAxiosInstance.post("/logout");
+    securedAxiosInstance.post("/logout"); // todo: handle errors
     localStorage.removeItem("token");
     commit("resetUser");
   }
