@@ -5,8 +5,8 @@
         <div class="columns is-centered">
           <div class="form-box">
             <login-form></login-form>
-            <a>Forgot password?</a>
-            <router-link to="/register">Register</router-link>
+            <a class="forgot-password-link">Forgot password?</a>
+            <router-link to="/register" class="register-link">Register</router-link>
           </div>
         </div>
       </div>
@@ -25,4 +25,15 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
+a {
+  display: block;
+}
+
+.register-link {
+  color: black;
+}
+
+.forgot-password-link {
+  color: black;
+}
 </style>
