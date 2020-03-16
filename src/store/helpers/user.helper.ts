@@ -6,8 +6,6 @@ export const defaultState: UserState = {
   userId: "",
   username: "",
   email: "",
-  emailconfirmed: false,
-  rememberMe: false,
   token: null
 };
 

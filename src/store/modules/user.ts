@@ -21,8 +21,6 @@ const mutations = {
     state.userId = user.userId;
     state.username = user.username;
     state.email = user.email;
-    state.emailconfirmed = user.emailconfirmed;
-    state.rememberMe = user.rememberMe;
     state.token = user.token;
   },
 
@@ -31,8 +29,6 @@ const mutations = {
     state.userId = defaultState.userId;
     state.username = defaultState.username;
     state.email = defaultState.email;
-    state.emailconfirmed = defaultState.emailconfirmed;
-    state.rememberMe = defaultState.rememberMe;
   }
 };
 
